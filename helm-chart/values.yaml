@@ -22,3 +22,10 @@ service:
     port: 5001
     protocol: TCP
     targetPort: 5001
+
+env:
+    DB_NAME: postgres
+    DB_USER: postgres
+    DB_PASSWORD: password
+    DB_HOST: localhost
+    DB_PORT: 1234
