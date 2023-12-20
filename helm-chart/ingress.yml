@@ -4,11 +4,11 @@ metadata:
   name: server
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-  namespace: ns-03
+  namespace: ns-29
 spec:
   ingressClassName: nginx
   rules:
-  - host: server.ns-03
+  - host: name-29.hse.ru
     http:
       paths:
       - backend:
