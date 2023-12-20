@@ -5,8 +5,12 @@ kind: Service
 metadata:
   name:  {{ .Values.app.name }}
   namespace: {{ .Values.namespace }}
+  labels:
+    app: server
 spec:
   type: {{ .Values.service.type }}
+  selector:
+    app: server
   ports: 
 {{ toYaml .Values.service.ports | indent 2 }}
 {{ end }}
